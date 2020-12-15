@@ -13,7 +13,7 @@ namespace WebApplication6
         {
             var resul = (from oc in _ctx.Products where oc.ProductName.Contains(desc) select oc)
                 .OrderBy(p => p.ProductID).
-                Skip((startIndex - 1) * maxRows).Take(maxRows);/*
+                Skip((startIndex - 1) * maxRows).Take(maxRows);
             return resul.ToList();
         }
         public int GetPaginacionCount(string desc)
