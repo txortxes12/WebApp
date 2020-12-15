@@ -22,7 +22,7 @@ namespace WebApplication6
         private void CargarData(int starIndex, int maxRows)
         {
             gdvLista.DataSource = new ProductBl().GetPaginacionByDesc(starIndex, maxRows, txtDesc.Text);
-            gdvLista.DataBind();
+            gdvLista.DataBind(); /*
         }
         private int Count()
         {
