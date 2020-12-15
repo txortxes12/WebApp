@@ -18,7 +18,7 @@ namespace WebApplication6
         }
         public int GetPaginacionCount(string desc)
         {
-            return _ctx.Products.Count(p => p.ProductName.Contains(desc));      
+            return _ctx.Products.Count(p => p.ProductName.Contains(desc));     
         }
     }
 }
