@@ -64,7 +64,7 @@
                                     <asp:TextBox ID="txtPrecio" runat="server" Text='<%# Eval("UnitPrice") %>'></asp:TextBox>
                                 </EditItemTemplate>
                             </asp:TemplateField>
-                             <asp:TemplateField HeaderText="STOCK" ItemStyle-Width="150">
+                             <asp:TemplateField HeaderText="STOCK" ItemStyle-Width="120">
                                 <ItemTemplate>
                                     <asp:Label ID="lblbUnitsStock" runat="server" Text='<%# Eval("UnitsInStock") %>'></asp:Label>
                                 </ItemTemplate>
