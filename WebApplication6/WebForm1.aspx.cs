@@ -34,7 +34,7 @@ namespace WebApplication6
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
             gdvLista.VirtualItemCount = Count();
-            CargarData(1, 5);
+            CargarData(1, 5); 
         }
 
         protected void gdvLista_PageIndexChanging(object sender, GridViewPageEventArgs e)
@@ -45,7 +45,7 @@ namespace WebApplication6
         protected void OnRowEditing(object sender, GridViewEditEventArgs e)
         {
             int pagina = gdvLista.PageIndex;
-            gdvLista.EditIndex = e.NewEditIndex;
+            gdvLista.EditIndex = e.NewEditIndex;//
             this.CargarData(pagina +1,5);
         }
         protected void OnRowUpdating(object sender, GridViewUpdateEventArgs e)
